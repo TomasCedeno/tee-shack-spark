@@ -2,41 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* TeeShack - E-commerce Design System for Fashion */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors - Clean and modern */
+    --background: 0 0% 98%;
+    --foreground: 222 47% 11%;
 
+    /* Cards and surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 11%;
 
+    /* Popover elements */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary brand colors - Sophisticated navy */
+    --primary: 225 83% 20%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 225 83% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Warm gray tones */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones for subtle elements */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent colors - Vibrant coral for CTAs */
+    --accent: 14 86% 58%;
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 14 86% 63%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Success and error states */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Border and input styling */
+    --border: 220 14% 91%;
+    --input: 220 14% 91%;
+    --ring: 225 83% 20%;
 
-    --radius: 0.5rem;
+    /* Design system variables */
+    --radius: 0.75rem;
+
+    /* Custom e-commerce colors */
+    --price: 142 76% 36%;
+    --sale: 0 84% 60%;
+    --rating: 45 93% 47%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(225 83% 20%), hsl(225 83% 25%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 14% 98%));
+    --gradient-accent: linear-gradient(135deg, hsl(14 86% 58%), hsl(14 86% 63%));
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(225 83% 20% / 0.1);
+    --shadow-medium: 0 4px 16px -4px hsl(225 83% 20% / 0.15);
+    --shadow-strong: 0 8px 24px -6px hsl(225 83% 20% / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +87,53 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode - Sophisticated dark theme */
+    --background: 222 47% 4%;
+    --foreground: 0 0% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 222 47% 6%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222 47% 6%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 225 83% 60%;
+    --primary-foreground: 222 47% 4%;
+    --primary-hover: 225 83% 65%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 222 47% 8%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 222 47% 8%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 14 86% 58%;
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 14 86% 63%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 222 47% 12%;
+    --input: 222 47% 12%;
+    --ring: 225 83% 60%;
+
+    /* Custom dark mode colors */
+    --price: 142 76% 45%;
+    --sale: 0 84% 60%;
+    --rating: 45 93% 55%;
+    
+    /* Dark gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(225 83% 15%), hsl(225 83% 20%));
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 6%), hsl(222 47% 8%));
+    --gradient-accent: linear-gradient(135deg, hsl(14 86% 50%), hsl(14 86% 55%));
+    
+    /* Dark shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --shadow-medium: 0 4px 16px -4px hsl(0 0% 0% / 0.4);
+    --shadow-strong: 0 8px 24px -6px hsl(0 0% 0% / 0.5);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +151,44 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+  
+  .animate-bounce-in {
+    animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

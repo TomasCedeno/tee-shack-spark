@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Camiseta Básica Negra",
+    "price": 29.99,
+    "originalPrice": 39.99,
+    "description": "Camiseta básica de algodón 100% orgánico. Perfecta para el día a día con un corte clásico y cómodo.",
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=500&h=600&fit=crop"
+    ],
+    "category": "básicas",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": ["Negro", "Blanco", "Gris"],
+    "inStock": true,
+    "rating": 4.5,
+    "reviews": 127,
+    "tags": ["básica", "algodón", "unisex"],
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Camiseta Estampada Vintage",
+    "price": 34.99,
+    "originalPrice": 44.99,
+    "description": "Camiseta con estampado vintage único. Diseño exclusivo que combina estilo retro con comodidad moderna.",
+    "images": [
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=500&h=600&fit=crop"
+    ],
+    "category": "estampadas",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Azul", "Verde", "Burdeos"],
+    "inStock": true,
+    "rating": 4.7,
+    "reviews": 89,
+    "tags": ["vintage", "estampada", "diseño exclusivo"],
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Camiseta Oversized Blanca",
+    "price": 32.99,
+    "description": "Camiseta de corte oversized para un look relajado y moderno. Tejido suave y transpirable.",
+    "images": [
+      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=500&h=600&fit=crop"
+    ],
+    "category": "oversized",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "colors": ["Blanco", "Crema", "Gris claro"],
+    "inStock": true,
+    "rating": 4.3,
+    "reviews": 156,
+    "tags": ["oversized", "moderna", "relajada"]
+  },
+  {
+    "id": 4,
+    "name": "Camiseta Rayas Marineras",
+    "price": 36.99,
+    "originalPrice": 49.99,
+    "description": "Clásica camiseta de rayas estilo marinero. Un básico atemporal que nunca pasa de moda.",
+    "images": [
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&h=600&fit=crop"
+    ],
+    "category": "básicas",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": ["Azul marino/Blanco", "Negro/Blanco", "Rojo/Blanco"],
+    "inStock": true,
+    "rating": 4.6,
+    "reviews": 203,
+    "tags": ["rayas", "marinero", "clásica"],
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Camiseta Gráfica Urbana",
+    "price": 38.99,
+    "description": "Camiseta con diseño gráfico urbano contemporáneo. Para quienes buscan destacar con estilo.",
+    "images": [
+      "https://images.unsplash.com/photo-1583743814966-8936f37f4fc9?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1554568218-0f1715e72254?w=500&h=600&fit=crop"
+    ],
+    "category": "estampadas",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Negro", "Gris oscuro", "Azul oscuro"],
+    "inStock": true,
+    "rating": 4.4,
+    "reviews": 94,
+    "tags": ["gráfica", "urbana", "contemporánea"]
+  },
+  {
+    "id": 6,
+    "name": "Camiseta Polo Clásica",
+    "price": 45.99,
+    "originalPrice": 59.99,
+    "description": "Polo clásico de algodón piqué. Elegancia casual para cualquier ocasión.",
+    "images": [
+      "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&h=600&fit=crop"
+    ],
+    "category": "polos",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "colors": ["Azul marino", "Blanco", "Verde", "Negro"],
+    "inStock": true,
+    "rating": 4.8,
+    "reviews": 167,
+    "tags": ["polo", "clásico", "elegante"],
+    "featured": true
+  },
+  {
+    "id": 7,
+    "name": "Camiseta Deportiva Técnica",
+    "price": 41.99,
+    "description": "Camiseta técnica para deporte con tecnología de secado rápido y antimicrobiana.",
+    "images": [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1544966503-7cc535cfc5e1?w=500&h=600&fit=crop"
+    ],
+    "category": "deportivas",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": ["Negro", "Azul", "Gris", "Verde"],
+    "inStock": true,
+    "rating": 4.5,
+    "reviews": 112,
+    "tags": ["deportiva", "técnica", "secado rápido"]
+  },
+  {
+    "id": 8,
+    "name": "Camiseta Tie-Dye Arcoíris",
+    "price": 33.99,
+    "description": "Camiseta con patrón tie-dye único. Cada prenda es única con colores vibrantes.",
+    "images": [
+      "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&h=600&fit=crop"
+    ],
+    "category": "estampadas",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Arcoíris", "Azul tie-dye", "Rosa tie-dye"],
+    "inStock": false,
+    "rating": 4.2,
+    "reviews": 78,
+    "tags": ["tie-dye", "único", "colorido"]
+  }
+]
