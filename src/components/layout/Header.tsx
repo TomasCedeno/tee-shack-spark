@@ -30,11 +30,8 @@ export const Header: React.FC = () => {
             <Link to="/products" className="text-foreground hover:text-primary transition-colors">
               Productos
             </Link>
-            <Link to="/categories" className="text-foreground hover:text-primary transition-colors">
-              Categorías
-            </Link>
-            <Link to="/offers" className="text-foreground hover:text-primary transition-colors">
-              Ofertas
+            <Link to="/cart" className="text-foreground hover:text-primary transition-colors">
+              Carrito
             </Link>
           </nav>
 
